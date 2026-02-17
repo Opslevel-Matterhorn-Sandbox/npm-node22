@@ -1,0 +1,20 @@
+{
+  "name": "config-utils",
+  "version": "1.0.0",
+  "description": "Small CLI to filter and sort JSON config.",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/index.test.js",
+    "lint": "eslint src test"
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
