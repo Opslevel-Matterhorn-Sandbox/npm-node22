@@ -1,0 +1,8 @@
+name: Failing Suite
+on: [pull_request]
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always fail
+        run: exit 1
