@@ -1,0 +1,10 @@
+name: Slow Passing Suite
+on: [pull_request]
+jobs:
+  pass:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep so this completes after the failing suite
+        run: sleep 30
+      - name: Always pass
+        run: echo "All good"
